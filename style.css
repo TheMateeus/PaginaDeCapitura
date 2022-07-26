@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Share+Tech+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+main{
+    height: 97vh;
+    width: 99.5vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* background: linear-gradient(-45deg, #ffffff, #969195, #d49cc6, #eb90eb);
+  background-size:  400% 400%;
+    animation: backgroundTransition 8s ease-in-out infinite; */
+}
+
+@keyframes backgroundTransition {
+    0% {
+      background-position: 0% 80%;
+    }
+    50%{
+      background-position: 80% 100%;
+    }
+    100% {
+      background-position: 0% 80%;
+    }
+  }
+  
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input{
+
+    height: 4vh;
+    margin: 20px;
+}
+#email,#name,#sobrenome {
+    width: 20vw;
+}
+#button{
+   
+    display: flex;
+    margin: 0 auto;
+    width: 100px;
+    height: 70px;
+    font-size: 20px;
+    justify-content: center;
+}
+.nomeSobrenome{
+    display: flex;
+    flex-direction: row;
+}
+.email{
+    display: flex;
+    flex-direction: row;
+}
+
+.apresentacao{
+    height: 97vh;
+    width: 59vw;
+    position: relative;
+    justify-content: center;  
+    
+}
+.apresentacao img{
+    height: 80vh;
+    width: 45vw;
+    margin-bottom: 7vw;
+}
+.fotoslateral img{
+    height: 29vh;
+    width: 20vw;
+    padding: 10px;
+    filter: grayscale(100%);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.fotoslateral1 img{
+    height: 29vh;
+    width: 20vw;
+    padding: 10px;
+    filter: grayscale(100%);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.fotoslateral img:hover,.fotoslateral1 img:hover{
+    filter: none;
+}
+.logo{
+    position: absolute;
+    top: 1vh;
+    left: 30%;
+    display: flex;
+    flex-direction: row;
+}
+.logoElon img{
+    width: 14vw;
+    height: 22vh;
+}
+.texto {
+    display: flex;
+    align-items: flex-start;
+}
+.texto h1{
+    text-transform: uppercase;
+    color: red;
+    font-size: calc(2px + 5vw);
+    font-family: 'Roboto', sans-serif;
+}
+.logo-foto{
+    display: flex;
+    flex-direction: column;
+}
+.instagram {
+    padding-top: 1vh;
+    height: 4vh;
+    width: 2vw;
+}
+.main{
+    border: 1px solid;
+   padding: 10px;
+   border-radius: 40px;
+  box-shadow: 5px 10px 8px #888888;
+}
+.informacoes{
+    position: absolute;
+    z-index: 2;
+    top: 75vh;
+    right: 42vw;
+    height: 18vh;
+    width: 30vw;
+}
+.informacoes p{
+    font-size: calc(9px + 1vw);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+.dados{
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height:40vh;
+    width: 99.5vw;
+    background-color: rgb(199, 116, 178);
+    border-radius: 20px;
+    overflow: hidden;
+    opacity: 0.9;
+    display: none;
+    z-index: 3;
+}
+.inscrever {
+    position: absolute;
+    top: 83vh;
+    right: 18vw;
+    display: flex;
+    width: auto;
+   
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin:2vw;
+    padding:2vh 2vw;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+
+
+}
+.inscrever:hover{
+    box-shadow: 0 0 40px 40px #e74c3c inset;
+    color: white;
+}
+@media (max-width: 500px) {
+    .fotoslateral{
+        display: none;
+    }
+    .apresentacao{
+        height: 70vh;
+    }
+    .apresentacao img {
+        margin-bottom: 30vw;
+    }
+    .informacoes{
+        width: 50vw;
+        top: 66vh;
+        right: 20vw;
+
+    }
+    .instagram{
+        height: 2vh;
+        width: 5vw;
+    }
+    .main{
+        width: 66vw;
+    }
+    .inscrever{
+        right: 9vw;
+    }
+    .informacoes{
+        right: 12vw;
+    }
+}

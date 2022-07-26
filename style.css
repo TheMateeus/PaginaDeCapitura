@@ -73,7 +73,7 @@ input{
 }
 .apresentacao img{
     height: 80vh;
-    width: 45vw;
+    width: 60vw;
     margin-bottom: 7vw;
 }
 .fotoslateral img{
@@ -102,8 +102,8 @@ input{
     display: flex;
     flex-direction: row;
 }
-.logoElon img{
-    width: 14vw;
+.logoElon{
+    width: 12vw;
     height: 22vh;
 }
 .texto {
@@ -135,11 +135,12 @@ input{
     position: absolute;
     z-index: 2;
     top: 75vh;
-    right: 42vw;
+    right: 39vw;
     height: 18vh;
-    width: 30vw;
+    width: 40vw;
 }
 .informacoes p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: calc(9px + 1vw);
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -214,8 +215,9 @@ input{
         height: 70vh;
     }
     .apresentacao img {
-        margin-bottom: 30vw;
+        height: 50vh;
     }
+    
     .informacoes{
         width: 50vw;
         top: 66vh;
@@ -226,13 +228,28 @@ input{
         height: 2vh;
         width: 5vw;
     }
+    .logoElon{
+        width: 28vw;
+        height: 20vh;
+    }
+    .texto h1{
+        font-size: 3vh;
+    }
+    
     .main{
+        margin-top: 2vh;
         width: 66vw;
+        height: 60vh;
     }
     .inscrever{
         right: 9vw;
     }
     .informacoes{
         right: 12vw;
+        width: 60vw;
+    }
+    .informacoes p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: calc(10px + 2vw);
     }
 }

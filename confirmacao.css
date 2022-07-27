@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0;
+    overflow: hidden;
+}
+body{
+    background-image: url("./img/backgroundConfirmacao.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fundo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.jailson{
+    background-color: white;
+    width: 25vw; 
+    border-radius: 25px; 
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 10px 8px #888888;
+}
+.elon{
+    width: 25vw;
+    background-color: white;
+    border-radius: 25px; 
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 10px 8px #888888;
+
+}
+.certo{
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+    overflow: hidden;
+    height: 0vh;
+}
+.confirmacao {
+    animation: confirmacao 2s linear forwards 2s;
+}
+.certo H1{
+    text-transform: uppercase;
+    font-size: 6vw;
+}
+.certo H2{
+    text-transform: lowercase;
+    font-size: 3vw;
+}
+.certoImg{
+    width: 30vw;
+    height: 40vh;
+}
+
+@keyframes confirmacao {
+    from {
+        height: 0vh;
+    }
+    to {
+        height: 100vh;
+    }
+    
+}
+@media (max-width: 500px) {
+    .elon {
+        display: none;
+    }
+    .certoImg {
+        height: 45vh;
+        width: 100vw;
+    }
+    .certo{
+        width: 100vw;
+    }
+    .fundo{
+        width: auto;
+    }
+    .jailson{
+        display: none;
+    }
+    .certo H1{
+        font-size: 13vw;
+    }
+    .certo H2{
+        font-size:6vw;
+    }
+}

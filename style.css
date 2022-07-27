@@ -213,6 +213,9 @@ input{
     color: white;
 }
 @media (max-width: 500px) {
+    body{
+        overflow: auto;
+    }
     .fotoslateral{
         display: none;
     }
@@ -241,7 +244,7 @@ input{
     .main{
         margin-top: 2vh;
         width: 66vw;
-        height: 60vh;
+        height: 58vh;
     }
     .inscrever{
         top:85vh;

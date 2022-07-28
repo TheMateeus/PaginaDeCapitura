@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'roboto' Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 body{
     display: flex;
@@ -109,13 +109,18 @@ input{
 }
 .texto {
     display: flex;
-    align-items: flex-start;
+    padding-right: 20px;
 }
 .texto h1{
     text-transform: uppercase;
     color: red;
     font-size: calc(2px + 5vw);
+    text-align: center;
     
+}
+.texto h2 {
+    text-align: center;
+    font-size: calc(2px + 2vw);
 }
 .logo-foto{
     display: flex;
@@ -179,10 +184,10 @@ input{
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
-    background-color: transparent;
-    border: 2px solid #3ce74a;
+    background-color: #025509;
+    border: 2px solid #025509;
     border-radius: 0.6em;
-    color: #42e73c;
+    color: #ffffff;
     cursor: pointer;
     display: -webkit-box;
     display: -webkit-flex;
@@ -199,7 +204,6 @@ input{
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 
 
@@ -207,6 +211,9 @@ input{
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 
 
+}
+.imgResponsiva {
+    display: none;
 }
 .inscrever:hover{
     box-shadow: 0 0 40px 40px #1aaf1a inset;
@@ -216,6 +223,9 @@ input{
     body{
         overflow: auto;
     }
+    .imgResponsiva {
+        display: block;
+    }
     .fotoslateral{
         display: none;
     }
@@ -224,21 +234,31 @@ input{
     }
     .apresentacao img {
         height: 50vh;
+        margin-bottom: 0;
     }
     
     .informacoes{
-        width: 50vw;
+        width: 61vw;
         top: 66vh;
-        right: 20vw;
-
+        right: 7vw;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
-    
+    .fotoslateral1 img{
+        height: 16vh;
+        width: 22vw;
+    }
     .logoElon{
         width: 28vw;
         height: 20vh;
     }
     .texto h1{
-        font-size: 3vh;
+        font-size: 20px;
+    }
+    .texto h2{
+        font-size: 14px;
+        justify-content: center;
     }
     
     .main{
@@ -247,21 +267,35 @@ input{
         height: 56vh;
     }
     .inscrever{
-        top:85vh;
-        right: 11vw;
+        top:88vh;
+        right: 6vw;
     }
-    .informacoes{
-        right: 2vw;
-        width: 80vw;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
+    
     .informacoes p{
         font-size: calc(10px + 2vw);
     }
     .inst a{
         display: flex;
         align-items: center;
+    }
+    #email,#name,#sobrenome{
+        width: 50vw;
+    }
+    .nome{
+        display: flex;
+        flex-direction: row;
+    }
+    .sobrenome{
+        display: flex;
+        flex-direction: row;
+    }
+    .nomeSobrenome{
+        flex-direction: column;
+    }
+    input{
+        margin: 10px;
+    }
+    #button{
+        height: 47px;
     }
 }

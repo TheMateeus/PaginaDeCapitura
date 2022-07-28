@@ -3,6 +3,7 @@
     padding: 0;
     box-shadow: 0;
     overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
     background-image: url("./img/backgroundConfirmacao.jpg") ;
@@ -36,7 +37,7 @@ body{
 
 }
 .certo{
-    width: 45vw;
+    width: 48vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -46,7 +47,7 @@ body{
     height: 0vh;
 }
 .confirmacao {
-    animation: confirmacao 2s linear forwards 2s;
+    animation: confirmacao 1s linear forwards 0.5s;
 }
 .certo H1{
     text-transform: uppercase;
@@ -57,8 +58,8 @@ body{
     font-size: 3vw;
 }
 .certoImg{
-    width: 30vw;
-    height: 40vh;
+    width: 20vw;
+    height: 30vh;
 }
 
 @keyframes confirmacao {
@@ -75,8 +76,9 @@ body{
         display: none;
     }
     .certoImg {
-        height: 45vh;
-        width: 100vw;
+        height: 30vh;
+        width: 60vw;
+        margin-bottom: 40px;
     }
     .certo{
         width: 100vw;

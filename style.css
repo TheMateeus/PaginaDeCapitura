@@ -170,6 +170,14 @@ input{
     display: none;
     z-index: 3;
 }
+.nome{
+    display: flex;
+    flex-direction: row;
+}
+.sobrenome{
+    display: flex;
+    flex-direction: row;
+}
 .inscrever {
     position: absolute;
     top: 78vh;
@@ -282,11 +290,11 @@ input{
         width: 50vw;
     }
     .nome{
-        display: flex;
+       
         flex-direction: row;
     }
     .sobrenome{
-        display: flex;
+       
         flex-direction: row;
     }
     .nomeSobrenome{

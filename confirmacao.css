@@ -47,7 +47,7 @@ body{
     height: 0vh;
 }
 .confirmacao {
-    animation: confirmacao 1s linear forwards 0.5s;
+    animation: confirmacao 0.5s linear forwards 0.5s;
 }
 .certo H1{
     text-transform: uppercase;
